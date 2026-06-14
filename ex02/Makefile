@@ -1,4 +1,4 @@
-NAME = ClapTrap
+NAME = FragTrap
 
 CPP = c++
 

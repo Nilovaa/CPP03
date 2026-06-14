@@ -1,4 +1,4 @@
-#include "DiamondTrap.hpp"
+#include "Diamondtrap.hpp"
 
 DiamondTrap::DiamondTrap() : ScavTrap(), FragTrap()
 {
