@@ -15,57 +15,28 @@
 
 int main()
 {
-    FragTrap frag;
-    FragTrap frag2("Fraggy");
-    FragTrap frag3("Fraggy2");
-
-    frag3 = frag2;
-    frag3.attack("Zo");
-    frag2.attack("Enemy");
-    frag.attack("Enemy");
-    frag.takeDamage(30);
-    frag.beRepaired(10);
-    frag.highFivesGuys();
-
-
-    /*
-    std::cout << "=== Testing FragTrap Construction/Destruction ===" << std::endl;
-    {
-        std::cout << "--- FragTrap creation ---" << std::endl;
-        FragTrap frag("Fraggy");
-        std::cout << std::endl;
-
-        std::cout << "--- FragTrap actions ---" << std::endl;
-        frag.attack("Enemy");
-        frag.takeDamage(40);
-        frag.beRepaired(20);
-        frag.highFivesGuys();
-        std::cout << std::endl;
-
-        std::cout << "--- FragTrap destruction ---" << std::endl;
-    }
+    FragTrap frag("Fraggg");
     std::cout << std::endl;
-
-    std::cout << "=== Testing all three types ===" << std::endl;
-    {
-        ClapTrap clap("Clappy");
-        ScavTrap scav("Scavvy");
-        FragTrap frag("Fragster");
-        std::cout << std::endl;
-
-        std::cout << "--- All attack ---" << std::endl;
-        clap.attack("Monster");
-        scav.attack("Monster");
-        frag.attack("Monster");
-        std::cout << std::endl;
-
-        std::cout << "--- Special abilities ---" << std::endl;
-        scav.guardGate();
-        frag.highFivesGuys();
-        std::cout << std::endl;
-
-        std::cout << "--- Destruction order (reverse) ---" << std::endl;
-    }*/
+    
+    frag.attack("Enemy");
+    frag.takeDamage(40);
+    frag.beRepaired(20);
+    frag.highFivesGuys();
+    std::cout << std::endl;
+    
+    ClapTrap clap("Clappp");
+    ScavTrap scav("Scavvv");
+    FragTrap frag2("Fragggggg");
+    std::cout << std::endl;
+    
+    clap.attack("Monster");
+    scav.attack("Monster");
+    frag2.attack("Monster");
+    std::cout << std::endl;
+    
+    scav.guardGate();
+    frag2.highFivesGuys();
+    std::cout << std::endl;
 
     return 0;
 }

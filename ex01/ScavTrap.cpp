@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nyrakoto <nyrakoto@student.42antananarivo  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/15 16:10:37 by nyrakoto          #+#    #+#             */
+/*   Updated: 2026/06/15 16:10:40 by nyrakoto         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap()
@@ -10,7 +22,7 @@ ScavTrap::ScavTrap() : ClapTrap()
 
 ScavTrap::~ScavTrap()
 {
-    std::cout << "ScavTrap destroyed!" << std::endl;
+    std::cout << "ScavTrap " << _name << " destroyed!" << std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
@@ -41,7 +53,6 @@ void ScavTrap::attack(const std::string& target)
     if (_energyPoints > 0)
     {
         _energyPoints--;
-        //std::cout << "Energy points left: " << _energyPoints << std::endl;
         std::cout << "ScavTrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage!" << std::endl;
     }
     else
