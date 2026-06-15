@@ -14,6 +14,15 @@
 
 int main()
 {
+    ScavTrap scav;
+
+    scav.attack("Enemy");
+    scav.takeDamage(30);
+    scav.beRepaired(10);
+    scav.guardGate();
+
+
+    /*
     std::cout << "=== Testing Construction/Destruction Chaining ===" << std::endl;
     std::cout << std::endl;
 
@@ -59,7 +68,7 @@ int main()
         scav.attack("Nobody");
         scav.beRepaired(5);
         std::cout << std::endl;
-    }
+    }*/
 
     return 0;
 }

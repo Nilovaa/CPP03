@@ -15,6 +15,20 @@
 
 int main()
 {
+    FragTrap frag;
+    FragTrap frag2("Fraggy");
+    FragTrap frag3("Fraggy2");
+
+    frag3 = frag2;
+    frag3.attack("Zo");
+    frag2.attack("Enemy");
+    frag.attack("Enemy");
+    frag.takeDamage(30);
+    frag.beRepaired(10);
+    frag.highFivesGuys();
+
+
+    /*
     std::cout << "=== Testing FragTrap Construction/Destruction ===" << std::endl;
     {
         std::cout << "--- FragTrap creation ---" << std::endl;
@@ -51,7 +65,7 @@ int main()
         std::cout << std::endl;
 
         std::cout << "--- Destruction order (reverse) ---" << std::endl;
-    }
+    }*/
 
     return 0;
 }
